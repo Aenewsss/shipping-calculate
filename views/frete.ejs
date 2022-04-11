@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frete</title>
+</head>
+<body>
+    <form action="/frete" method="POST">
+        <p>
+            <label for="servico">Serviço:</label>
+            <select name="select" id="servico">
+                <option value="escolha">---</option>
+                <option value="04014">SEDEX</option>
+                <option value="04510">PAC</option>
+            </select>
+        </p>
+        <p>
+            <label for="cep">Insira o seu cep</label>
+            <input name="cep" type="number" id="cep" value="<%= cep %>">
+        </p>
+            <button type="submit">Calcular frete</button>
+    </form>
+    <p id="calculo"><%= valor %></p>
+    <p id="entrega"><%= prazo %></p>
+</body>
+</html>

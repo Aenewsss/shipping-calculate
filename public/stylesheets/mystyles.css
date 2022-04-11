@@ -1,0 +1,19 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+
+#produtos{
+    display: flex;
+}
+
+
+
+.produto{
+    margin:0 auto;
+}
+
+#h2carrinho{
+    margin-top: 10%;
+}
+
